@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    //android:orderInCategory="" dùng để sắp xếp thứ tự các item trong option
+    <item android:title="Setting"
+        android:id="@+id/menuSetting"
+        android:orderInCategory="1"/>
+    <item android:title="Panel"
+        android:id="@+id/menuPanel"
+        android:orderInCategory="2"/>
+    <item android:title="Share"
+        android:id="@+id/menuShare"
+        android:orderInCategory="3"/>
+    <item android:title="Contact"
+        android:id="@+id/menuContact"
+        android:orderInCategory="0">
+        <menu>
+            <item android:title="Phone" android:id="@+id/Phone"></item>
+            <item android:title="Address" android:id="@+id/Address"></item>
+        </menu>
+    </item>
+</menu>

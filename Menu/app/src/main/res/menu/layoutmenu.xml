@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <item android:icon="@android:drawable/ic_media_play"-->
+<!--        android:id="@+id/Play"-->
+<!--        app:showAsAction="always"-->
+<!--        android:title="Play"/>-->
+<!--    <item android:icon="@android:drawable/ic_menu_camera"-->
+<!--        android:id="@+id/Camera"-->
+<!--        app:showAsAction="always"-->
+<!--        android:title="Camera"/>-->
+
+    //android:orderInCategory="" dùng để sắp xếp thứ tự các item trong option
+    <item android:title="Add now"
+        android:id="@+id/menuaddnow"/>
+    <item android:title="Call Back"
+        android:id="@+id/menucallback"/>
+    <item android:id="@+id/Camera"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:title="Camera">
+        <menu>
+            <item android:id="@+id/action_sort_size"
+                android:icon="@android:drawable/ic_menu_camera"
+                android:title="Camera" />
+        </menu>
+    </item>
+    <item android:title="CART"
+
+        android:id="@+id/menucart"/>
+    <item android:title="Video"
+        android:icon="@android:drawable/presence_video_away"
+        android:id="@+id/menuvideo">
+        <menu>
+            <item android:id="@+id/text"
+                android:icon="@android:drawable/presence_video_away"
+                android:title="Video" />
+        </menu>
+    </item>
+</menu>
